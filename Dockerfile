@@ -29,7 +29,7 @@ RUN apt-get update \
     && curl -L https://github.com/jwilder/dockerize/releases/download/v0.5.0/dockerize-linux-amd64-v0.5.0.tar.gz | tar -C /usr/local/bin -xzv \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
     && groupmod -g 985 users \
-    && useradd -u 1005 -U -d /config -s /bin/bash abc \
+    && useradd -u 1001 -U -d /config -s /bin/bash abc \
     && usermod -G users abc
 
 ADD openvpn/ /etc/openvpn/
