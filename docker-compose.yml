@@ -19,7 +19,7 @@ services:
       - 8.8.4.4
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - $HOME/development/Docker/docker-transmission-openvpn/data/:/data
+      - ./data/:/data
     environment:
       - "OPENVPN_PROVIDER=PIA"
       - "OPENVPN_CONFIG=CA\ Toronto"

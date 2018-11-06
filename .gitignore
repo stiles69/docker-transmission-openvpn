@@ -1,2 +1,5 @@
 # Data Directory
-data
+data*
+# Config
+config*
+common.env*
